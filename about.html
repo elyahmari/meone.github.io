@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>My Portfolio</title>
+
+    </head>
+    <body>
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+background-color: #9e6124;
+   }
+.sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: rgba(250, 184, 109, 0.781);
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+}
+   
+.sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #f5f4f0;
+     display: block;
+     transition: 0.3s;
+}
+   
+.sidenav a:hover {
+     color: #000000c7;
+}
+   
+.sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     float: right;
+}  
+.about-text{
+        max-width:500px;
+}
+@media only screen and (max-width: 620px){
+        .profile{max-width:800px;}
+        .about-text
+        {
+        max-width:800px;
+        }
+        .profile{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        }
+}
+span{
+	color: #f5d395;
+}
+.main{
+	width: 1130px;
+	display: flex;
+	align-items: center;
+}
+
+.profile{
+    border-radius: 50px;
+    background-color: #c7b27a;
+    margin-right: 30px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 5px #000000;
+    width: 30%;
+    height: 30%;
+}
+.about-text h2{
+	color: rgb(250, 227, 200);
+	font-size: 90px;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 1px;
+	line-height: 26px;
+	font-size: 16px;
+	margin-bottom: 10px;
+    text-align: justify;
+}
+
+</style>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a> 
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+<div class="logo">
+    <h2>PORT<span>FOLIO</span></h2>
+  </div>
+
+  <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;
+
+
+        <div class="main">
+            <img src="img/myprofile.png" class="profile">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Web<span>Designer</span></h5>
+                <p>I design and develop websites for small and medium businesses. I am a sophomore BSIT student in Eastern Visayas State University Ormoc Campus. I specialize in standard-based HTML and CSS which could develop website and a webpage.</p>
+                <p>I have created games, short story videos and karaoke lyrics on Microsoft power point presentation. As well as have generated grades using Microsoft Excel.</p>
+                <p>I'd love to crafting things, like dismantling broken cellphones and watches to check the device closer.</p>
+                
+            </div>
+        </div>
+        
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+    </body>
+
+</html>
+    
